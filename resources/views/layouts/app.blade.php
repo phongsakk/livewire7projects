@@ -7,6 +7,8 @@
 
     <title>Laravel</title>
 
+    <link rel="shortcut icon" href="{{ asset('storage/web/mii-logo.png') }}" type="image/x-icon">
+
     @vite([
         // default style&script
         'resources/css/app.css',
