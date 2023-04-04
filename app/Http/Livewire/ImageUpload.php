@@ -21,8 +21,6 @@ class ImageUpload extends Component
         foreach ($this->image as $image) {
             $image->store('public/uploads/image-upload');
         }
-
-        $image = [];
     }
 
     public function render()
