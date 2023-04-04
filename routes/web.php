@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Calculator;
 use App\Http\Livewire\Counter;
+use App\Http\Livewire\TodoList;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +22,7 @@ Route::get('/', function () {
 
 Route::get('counter', Counter::class)->name('counter');
 Route::get('calculator', Calculator::class)->name('calculator');
-Route::get('todo-list', Calculator::class)->name('todo-list');
+Route::get('todo-list', TodoList::class)->name('todo-list');
 Route::get('cascading-dropdown', Calculator::class)->name('cascading-dropdown');
 Route::get('products', Calculator::class)->name('products');
 Route::get('image-upload', Calculator::class)->name('image-upload');
