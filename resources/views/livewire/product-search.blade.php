@@ -22,6 +22,11 @@
                     <td class="py-2 px-3 border-b">${{ $product->price }}</td>
                 </tr>
             @empty
+                <tr>
+                    <td colspan="4">
+                        No record
+                    </td>
+                </tr>
             @endforelse
         </tbody>
         <tfoot>
