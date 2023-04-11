@@ -13,7 +13,7 @@
         </thead>
         <tbody>
             @forelse ($products as $product)
-                <tr>
+                <tr wire:key='{{ $product->id }}'>
                     <td class="py-2 px-3 border-b">{{ $product->id }}</td>
                     <td class="py-2 px-3 border-b">
                         <img src="{{ $product->image }}" alt="{{ $product->title }}" class="w-16">
@@ -22,7 +22,7 @@
                     <td class="py-2 px-3 border-b">${{ $product->price }}</td>
                 </tr>
             @empty
-                <tr>
+                <tr wire:key='0'>
                     <td colspan="4">
                         No record
                     </td>

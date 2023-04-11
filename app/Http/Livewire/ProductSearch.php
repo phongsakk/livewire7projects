@@ -12,7 +12,9 @@ class ProductSearch extends Component
 
     public string $search = '';
 
-    protected $queryString = ['search'];
+    protected $queryString = [
+        'search' => ['except' => '']
+    ];
 
     public function render()
     {
